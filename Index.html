@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./img/header/logo.svg" type="image/png">
     <title>FormBoard Delivery</title>
@@ -35,13 +36,13 @@
             <div class="header-second__row">
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li><a class="nav__element" href="#!">Калькулятор</a></li>
-                        <li><a class="nav__element" href="#!">О нас</a></li>
-                        <li><a class="nav__element" href="#!">Гарантии</a></li>
-                        <li><a class="nav__element" href="#!">Отзывы</a></li>
+                        <li><a class="nav__element" href="#calc">Калькулятор</a></li>
+                        <li><a class="nav__element" href="#advantages">О нас</a></li>
+                        <li><a class="nav__element" href="#licenses">Гарантии</a></li>
+                        <li><a class="nav__element" href="#reviews">Отзывы</a></li>
                     </ul>
                 </nav>
-                <a href="#!" class="button">Оставить заявку</a>
+                <a href="#connection" class="button">Оставить заявку</a>
             </div>
 
             <div class="header__text-bottom">
@@ -51,7 +52,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="description hide1">
+        <section class="description hide1" id="calc">
             <div class="container">
                 <div class="description__text-content">
                     <div class="title">
@@ -87,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section class="advantages hide1">
+        <section class="advantages hide1" id="advantages">
             <div class="container">
                 <h2 class="title">Наши преимущества</h2>
                 <div class="advantages__content">
@@ -107,7 +108,8 @@
                         </div>
                     </div>
                     <div class="advantages__element">
-                        <img class="advantages__img" src="./img/advantages/Delivery.svg" alt="" class="advantages__icon">
+                        <img class="advantages__img" src="./img/advantages/Delivery.svg" alt=""
+                            class="advantages__icon">
                         <div class="advantages__text">
                             <h3>Быстро и выгодно</h3>
                             <p>Мы предлагаем быструю и выгодную доставку, чтобы вы могли насладиться покупками как можно
@@ -115,7 +117,8 @@
                         </div>
                     </div>
                     <div class="advantages__element">
-                        <img class="advantages__img" src="./img/advantages/best support.svg" alt="" class="advantages__icon">
+                        <img class="advantages__img" src="./img/advantages/best support.svg" alt=""
+                            class="advantages__icon">
                         <div class="advantages__text">
                             <h3>Удобный сервис</h3>
                             <p>Стремимся сделать процесс доставки максимально удобным для вас, чтобы опыт остался
@@ -124,7 +127,8 @@
                         </div>
                     </div>
                     <div class="advantages__element">
-                        <img class="advantages__img" src="./img/advantages/clear info.svg" alt="" class="advantages__icon">
+                        <img class="advantages__img" src="./img/advantages/clear info.svg" alt=""
+                            class="advantages__icon">
                         <div class="advantages__text">
                             <h3>Прозрачность работы</h3>
                             <p>Мы предоставляем полный контроль над каждым этапом доставки, от момента заказа до момента
@@ -132,7 +136,8 @@
                         </div>
                     </div>
                     <div class="advantages__element">
-                        <img class="advantages__img" src="./img/advantages/garantee.svg" alt="" class="advantages__icon">
+                        <img class="advantages__img" src="./img/advantages/garantee.svg" alt=""
+                            class="advantages__icon">
                         <div class="advantages__text">
                             <h3>Страхование груза</h3>
                             <p>Наше страхование обеспечивает полную защиту и покрытие почти все неприятные и неожиданные
@@ -142,7 +147,7 @@
                 </div>
             </div>
         </section>
-        <section class="licenses hide1">
+        <section class="licenses hide1" id="licenses">
             <div class="container">
                 <div class="licenses__title">
                     <h2 class="title">Наши гарантии</h2>
@@ -172,39 +177,58 @@
                 <a class="button button--size-medium" href="#!">Показать больше документов</a>
             </div>
         </section>
-        <section class="reviews hide1">
+        <section class="reviews hide1" id="reviews">
             <div class="container">
                 <h3 class="title">Отзывы</h3>
                 <div class="reviews__content">
-                    <div class="review__self">
-                        <p class="review__text">
-                            Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро
-                            и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки
-                            невероятно позитивным
-                        </p>
-                        <span class="review__authtor">Анна</span>
-                        <img class="review__decore" src="./img/reviews/decore.png" alt="decore">
+                    <div id="carousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="review__self">
+                                    <p class="review__text">
+                                        Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро
+                                        и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт
+                                        покупки
+                                        невероятно позитивным
+                                    </p>
+                                    <span class="review__authtor">Анна</span>
+                                    <img class="review__decore" src="./img/reviews/decore.png" alt="decore">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="review__self">
+                                    <p class="review__text">
+                                        Покупал 5 плойку из Японии, очень рад. Чуваки сделали всё опператинов, через
+                                        неделю уже играл в гад оф вар
+                                    </p>
+                                    <span class="review__authtor">Максос</span>
+                                    <img class="review__decore" src="./img/reviews/decore.png" alt="decore">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="review__self">
+                                    <p class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed officiis eveniet,
+                                        cum consectetur esse fugit eaque saepe. Ex iure vel, in doloribus itaque
+                                        repudiandae, debitis consectetur placeat excepturi odit reiciendis.
+                                    </p>
+                                    <span class="review__authtor">Дима</span>
+                                    <img class="review__decore" src="./img/reviews/decore.png" alt="decore">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="review__self">
-                        <p class="review__text">
-                            Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро
-                            и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки
-                            невероятно позитивным
-                        </p>
-                        <span class="review__authtor">Анна</span>
-                        <img class="review__decore" src="./img/reviews/decore.png" alt="decore">
-
-                    </div>
-                    <a href="#!">
-                        <img class="reviews__left-navgation" src="./img/reviews/left.svg" alt="left">
-                    </a>
-                    <a href="#!">
-                        <img class="reviews__right-navgation" src="./img/reviews/right.svg" alt="right">
-                    </a>
+                    <a href="#!" class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                            data-bs-slide="prev">
+                            <img class="reviews__left-navgation" src="./img/reviews/left.svg" alt="left">
+                        </a>
+                        <a href="#!" class="carousel-control-next" role="button" data-bs-target="#carousel"
+                            data-bs-slide="next">
+                            <img class="reviews__right-navgation" src="./img/reviews/right.svg" alt="right">
+                        </a>
                 </div>
-            </div>
         </section>
-        <section class="connection hide1">
+        <section class="connection hide1" id="connection">
             <div class="container">
                 <div class="connection__content">
                     <h2 class="title">Остались вопросы?</h2>
@@ -236,7 +260,7 @@
                     <img src="./img/header/logo.svg" alt="logo">
                     <h2 class="logo__name">FromBoard Delivery</h2>
                 </div>
-                
+
                 <nav class="nav nav--footer">
                     <ul class="nav__list">
                         <li><a class="nav__element nav__element--footer" href="#!">Калькулятор</a></li>
@@ -252,6 +276,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
