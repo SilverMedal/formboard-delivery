@@ -1,0 +1,79 @@
+.description {
+    .container {
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.description__text-content {
+    display: flex;
+
+    .title h1 {
+        font-size: 30px;
+        line-height: 1;
+
+        text-align: left;
+
+        @include desktop {
+            font-size: 36px;
+        }
+
+    }
+
+    .title {
+        margin-right: 16px;
+
+        @include desktop {
+            font-size: 20px;
+        }
+    }
+
+    @include desktop {
+        display: block;
+
+        margin-top: 40px;
+        margin-right: 24px;
+
+    }
+
+    @include laptop-md {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+.description__text-content img {
+    width: 500px;
+
+    @include desktop {
+        width: unset;
+        height: 392px;
+
+        margin-top: 40px;
+
+    }
+
+    @include laptop-md {
+        width: unset;
+        max-height: 420px;
+        margin-top: 16px;
+    }
+
+    @include laptop-sm {
+        width: unset;
+        max-height: 350px;
+        margin-top: 16px;
+    }
+}
+
+.description__paragraph {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-top: 12px;
+
+    text-align: left;
+}

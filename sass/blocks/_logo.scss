@@ -1,0 +1,102 @@
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--footer{
+        color: #F9FAFB;
+        @include desktop {
+            .logo__free-call{
+                font-size: 24px;
+            }
+    
+            .logo__number {
+                font-size: 36px;
+            }
+        }
+    
+        @include laptop-md{
+            .logo__free-call{
+                font-size: 24px;
+            }
+    
+            .logo__number {
+                font-size: 30px;
+            }
+        }
+        @include mobile{
+            flex-direction: column;
+        }
+    }
+}
+
+.logo__name {
+    font-size: 24px;
+    @include laptop-md{
+        margin: 0 auto;
+    }
+}
+
+.logo__contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin-left: 12px;
+
+    font-size: 18px;
+
+    .logo__number {
+        font-size: 30px;
+    }
+
+    .logo__free-call{
+        font-size: 20px;
+    }
+
+    @include desktop {
+        .logo__free-call{
+            font-size: 24px;
+        }
+
+        .logo__number {
+            font-size: 36px;
+        }
+    }
+
+    @include laptop-md{
+        .logo__free-call{
+            font-size: 24px;
+        }
+
+        .logo__number {
+            font-size: 30px;
+        }
+    }
+
+    @include laptop-sm{
+        .logo__free-call{
+            display: none;
+        }
+        .logo__number {
+            font-size: 18px;
+        }
+        .logo__name{
+            font-size: 18px;
+        }   
+    }
+
+}
+
+
+
+.logo__group {
+    display: flex;
+    align-items: center;
+}
+
+.logo-info__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,20 @@
+// BASE
+@import './base/reset';
+@import './base/base';
+@import './base/vars';
+@import './base/mixins';
+
+
+
+
+//BLOCKS
+@import './blocks/header';
+@import './blocks/logo';
+@import './blocks/nav';
+@import './blocks/description';
+@import './blocks/calc';
+@import './blocks/advantages';
+@import './blocks/licenses';
+@import './blocks/reviews';
+@import './blocks/connection';
+@import './blocks/footer'

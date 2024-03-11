@@ -1,0 +1,113 @@
+.reviews__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.review__self {
+    position: relative;
+    width: 396px;
+    height: 250px;
+
+    padding: 16px;
+    margin-left: 24px;
+    background-color: #F9FAFB;
+
+    align-items: start;
+    border-radius: 16px;
+
+    &:first-child {
+        margin: 0;
+    }
+
+    &:not(:first-child) {
+        @include laptop-md {
+            display: none;
+        }
+    }
+
+    @include desktop {
+        font-size: 24px;
+
+        padding: 32px 42px 0 42px;
+        height: 318px;
+        width: 626px;
+    }
+
+    @include laptop-md {
+        width: 570px;
+        height: 224px;
+
+        margin-bottom: 24px;
+    }
+
+    @include mobile{
+        max-width: 442px;
+        height: 252px;
+    }
+}
+
+.review__text {
+    font-size: 18px;
+
+    @include desktop {
+        font-size: 24px;
+    }
+
+}
+
+.review__authtor {
+    position: absolute;
+    left: 20px;
+    bottom: 16px;
+    color: #6B7280;
+    font-size: 16px;
+
+    margin-top: 24px;
+
+    @include desktop {
+        font-size: 24px;
+        margin-left: 16px;
+    }
+
+    @include laptop-md {
+        bottom: 32px;
+    }
+}
+
+.review__decore {
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+
+    @include laptop-md {
+        bottom: 26px;
+    }
+}
+
+.reviews__left-navgation {
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    @include desktop{
+        left: 20px; 
+    }
+    @include mobile{
+        left: 0;
+    }
+}
+
+.reviews__right-navgation {
+    position: absolute;
+    top: 25%;
+    right: 20px;
+
+    @include desktop{
+        right: 20px; 
+    }
+
+    @include mobile{
+        right: 0;
+    }
+}

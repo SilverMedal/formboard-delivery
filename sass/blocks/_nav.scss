@@ -1,0 +1,45 @@
+.nav {
+    &--footer{
+       @include laptop-md {
+        display: none;
+       }
+    }
+    &--laptop-md {
+        display: none;
+
+        @include laptop-md {
+            display: flex;
+            justify-content: center;
+
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list li {
+    &:not(:last-child) {
+        margin-right: 24px;
+    }
+}
+
+.nav__element {
+    color: #111827;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: #8B5CF6;
+    }
+
+    &:active {
+        border-bottom: 2px dashed #8B5CF6;
+    }
+
+    &--footer {
+        color: #F9FAFB;
+    }
+}

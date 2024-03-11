@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+@import './base/mixins';
+@import './base/vars';
+
+html,
+body {
+    font-family: 'Adamina', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #111827;
+}
+
+.main {
+    background-color: #EDE9FE;
+}
+
+.container {
+    max-width: 1026px;
+    margin: 0 auto;
+    padding: 24px 0;
+
+    @include desktop {
+        max-width: 1536px;
+    }
+
+    @include laptop-md {
+        max-width: 868px;
+        padding: 48px 20px 0 20px;
+    }
+
+    @include laptop-sm {
+        max-width: 640px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.button {
+    display: block;
+    width: 185px;
+    height: 45px;
+
+    text-align: center;
+    padding: 10px 0;
+
+    color: #F9FAFB;
+    background-color: #8B5CF6;
+    border-radius: 4px;
+
+    transition: background-color 0.1s ease-in;
+
+    &:hover {
+        background-color: #6D28D9;
+    }
+
+    &:active {
+        background-color: #A78BFA;
+    }
+
+    &--size-long {
+        width: 605px;
+        margin: 0 auto;
+    }
+
+    &--size-medium {
+        width: 292px;
+        margin: 0 auto;
+    }
+    &--connection{
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+}
